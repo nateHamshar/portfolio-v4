@@ -67,7 +67,7 @@ const Home = () => {
 
                 <ProjectCard title={"Ticket Management System"}
                              imageSource={require("../images/ticket-image.jpeg")}
-                             projectDescription={"This is a full-stack help ticket system built with React on the front-end, Express and Node for the server side, and Mongo for the Database. The user authorization and authentication is all handled with JSON Web Tokens to provide additional security to the application. The client side of this app is hosted on Netlify, and the server side is hosted on Render, so it may take a few seconds for them to both spin up. I have included a demo user button on the login page so you can easily test out the functionality for yourself. Feel free to add a ticket to test it out!"}
+                             projectDescription={"This is a full-stack help ticket system made for desktop. It was built with React on the front-end, Express and Node for the server side, and Mongo for the Database. The user authorization and authentication is all handled with JSON Web Tokens to provide additional security to the application. The client side of this app is hosted on Netlify, and the server side is hosted on Render, so it may take a few seconds for them to both spin up. I have included a demo user button on the login page so you can easily test out the functionality for yourself. Feel free to add a ticket to test it out!"}
                              codeURL={"https://github.com/nateHamshar/ticket-frontend"}
                              liveURL={"https://ticketmanagingsystem.netlify.app/"}
                     />
