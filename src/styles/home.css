@@ -3,10 +3,13 @@
 :root{
     --accent-color: #FF6F00;
     --main-text: #2f2e41;
-    --alt-text: #bbbbbb;
-    --main-font: 'Saira', sans-serif
+    --alt-text: #cccccc;
+    --main-font: 'Saira', sans-serif;
+    --emphasis: #FFFFFF;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .landingSection{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,22 +29,27 @@
 .welcomeSubheader{
     color: var(--alt-text);
     margin-left: 3rem;
+    margin-bottom: 1rem;
 }
 .accent{
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
-.projectsButton{
+.emphasis{
+    color: var(--emphasis);
+}
+.projectsLink{
     border: 2px solid var(--main-text);
     background-color: transparent;
     font-family: var(--main-font);
     border-radius: 100vh;
     font-size: 18px;
     font-weight: 600;
-    padding: 5px;
-    margin-top: 1rem;
+    padding: 4px;
     margin-left: 15%;
+    text-decoration: none;
+    color: var(--main-text);
 }
-.projectsButton:hover{
+.projectsLink:hover{
     cursor: pointer;
     color: var(--accent-color);
 }
@@ -85,13 +93,20 @@
     text-indent: 2rem;
     line-height: 2.5rem
 }
+.aboutParagraph .emphasis{
+    font-weight: bold;
+}
 .firstParagraph{
     margin-top: 5%;
 }
 .secondParagraph{
     margin-top: 2.5%;
 }
-
+.githubLink{
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
 .techSkills{
     display: flex;
     align-items: center;
@@ -141,5 +156,24 @@
 }
 
 .projectsSection{
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectsHeader{
+    color: var(--main-text);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    margin-top: 10%;
+}
+
+.footer{
+    background-color: #2f2e41;
+    height: 150px;
+    margin-top: 800px;
 }
