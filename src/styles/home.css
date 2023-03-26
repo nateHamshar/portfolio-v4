@@ -141,7 +141,7 @@ html{
     color: var(--alt-text);
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 30px;  
+    font-size: 24px;  
 }
 .frontendIcons, .backendIcons, .toolsIcons{
     display: grid;
@@ -177,3 +177,46 @@ html{
     height: 150px;
     margin-top: 800px;
 }
+
+@media only screen and (max-Width: 1600px) {
+    .landingSection{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+    }
+    .landingText{
+        margin-right: auto;
+    }
+    .landingImage{
+        height: 400px;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-Width: 1600px) {
+    .aboutSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+    }
+    .aboutText{
+        max-width: 1200px;
+    }
+    .techSkills{
+        width: 80%;
+    }
+    .techSkillsHeader{
+        margin-top: 10%;
+    }
+    .techLists{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .frontendHeader, .backendHeader, .toolsHeader{
+        margin-left: 25%;
+    }
+}
+

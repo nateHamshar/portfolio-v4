@@ -67,3 +67,16 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+@media only screen and (max-Width: 1630px) {
+   .projectCard{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    max-width: 1200px;
+    height: auto;
+   }
+   .projectTitle{
+    margin-top: 2rem;
+   }
+}
