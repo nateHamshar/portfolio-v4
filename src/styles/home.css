@@ -132,12 +132,10 @@ html{
 .frontend, .backend, .tools{
     display: flex;
     align-items: center;
-    width: 100%;
     margin-bottom: 5%;
 }
 .frontendHeader, .backendHeader, .toolsHeader{
     width: 20%;
-    margin-left: 10%;
     color: var(--alt-text);
     font-family: var(--main-font);
     font-weight: 400;
@@ -146,7 +144,6 @@ html{
 .frontendIcons, .backendIcons, .toolsIcons{
     display: grid;
     grid-template-columns: repeat(4, 80px);
-    margin-left: 10%;
 }
 .techIcon{
     height: 60px;
@@ -189,7 +186,7 @@ html{
     }
     .landingImage{
         height: 400px;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 }
 
@@ -214,10 +211,26 @@ html{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 25%;
+    }
+    .frontend, .backend, .tools{
+        justify-content: center;
     }
     .frontendHeader, .backendHeader, .toolsHeader{
-        margin-left: 10%;
+        margin-left: 0;
     }
 }
 
+@media only screen and (max-Width: 880px) {
+    .frontend, .backend, .tools{
+        flex-direction: column;
+    }
+    .frontendHeader, .backendHeader, .toolsHeader{
+        width: auto;
+    }
+}
+
+@media only screen and (max-Width: 680px) {
+    .landingImage{
+        height: 250px;
+    }
+}
