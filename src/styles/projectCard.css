@@ -10,6 +10,7 @@
 
 .projectCard{
     width: 80%;
+    max-width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 400px;
@@ -109,6 +110,9 @@
     .projectTitle{
         font-size: 28px;
     }
+    .projectDescription{
+        font-size: 14px
+    }
 }
 
 @media only screen and (max-Width: 600px) {
@@ -118,5 +122,15 @@
     }
     .projectCard{
         width: 500px;
+    }
+}
+
+@media only screen and (max-Width: 500px) {
+    .imageDiv, .projectImage{
+        width: 400px;
+        height: 200px;
+    }
+    .projectCard{
+        width: 400px;
     }
 }
