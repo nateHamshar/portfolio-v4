@@ -32,7 +32,7 @@ const Home = () => {
 
                             <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                             
-                            <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+                            <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"  />
                             
                             <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" />
                             <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
@@ -46,7 +46,10 @@ const Home = () => {
                             
                             <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
 
-                            <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />          
+                            <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                                
+                            <img className="techIcon" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" />
+
                         </div>
                         </div>
                         <div className="tools">
@@ -71,11 +74,17 @@ const Home = () => {
                              codeURL={"https://github.com/nateHamshar/ticket-frontend"}
                              liveURL={"https://ticketmanagingsystem.netlify.app/"}
                     />
-                    <ProjectCard title={"Ticket Management System"}
-                             imageSource={require("../images/ticket-image.jpeg")}
-                             projectDescription={"This is a full-stack help ticket system built with React on the front-end, Express and Node for the server side, and Mongo for the Database. The user authorization and authentication is all handled with JSON Web Tokens to provide additional security to the application. The client side of this app is hosted on Netlify, and the server side is hosted on Render, so it may take a few seconds for them to both spin up. I have included a demo user button on the login page so you can easily test out the functionality for yourself. Feel free to add a ticket to test it out!"}
-                             codeURL={"https://github.com/nateHamshar/ticket-frontend"}
-                             liveURL={"https://ticketmanagingsystem.netlify.app/"}
+                    <ProjectCard title={"Loan Payment Calculator"}
+                             imageSource={require("../images/loan-calculator.jpeg")}
+                             projectDescription={"An easy-to-use web application that requires the user to input different properties for a loan, and then provides the projected payments for the lifetime of the loan. Then, I used Chart.js to show a visualized version of an amortization schedule for that loan. This project was made with React, and does not require any connections to APIs or databases so it has a very quick functionality. It is currently being hosted on Github Pages, so it should load very quickly."}
+                             codeURL={"https://github.com/nateHamshar/loan-calculator-app"}
+                             liveURL={"https://natehamshar.github.io/loan-calculator-app/"}
+                    />
+                    <ProjectCard title={"Business Tracker"}
+                             imageSource={require("../images/business-tracker.jpeg")}
+                             projectDescription={"This business tracker allows the user to input sales and expenses that they encounter, and then provides some oversite to total expenses, total sales, and net profit. This app was built with React on the front-end, and connects to Firebase on the back-end. I used Axios to make the requests Firebase, and it allows the app to have quick response times and a better user experience. As of now, there is no user authentication system in place. The front-end is currently being hosted on Github Pages."}
+                             codeURL={"https://github.com/nateHamshar/business-tracker"}
+                             liveURL={"https://natehamshar.github.io/business-tracker/"}
                     />
             </section>
 
