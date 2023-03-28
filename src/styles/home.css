@@ -153,6 +153,11 @@ html{
     padding-bottom: 1rem;
 }
 
+/*
+    PROJECTS SECTION
+*/
+
+
 .projectsSection{
     display: flex;
     flex-direction: column;
@@ -170,11 +175,69 @@ html{
     margin-top: 10%;
 }
 
-.footer{
-    background-color: #2f2e41;
-    height: 150px;
-    margin-top: 800px;
+/*
+    CODE CHALLENGES SECTION
+*/
+.challengesSection{
+    background-color: var(--main-text);
+    margin-top: 10%;
+    padding-bottom: 20%;
 }
+.challengesIntro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+.challengesHeader{
+    color: White;
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    margin-top: 10%;
+}
+.challengesDescription{
+    color: var(--alt-text);
+    font-family: var(--main-font);
+    font-size: 24px;
+    text-indent: 2rem;
+    line-height: 2.5rem;
+    margin-top: 2.5%;
+    width: 80vw;
+    max-width: 900px;
+}
+.challengesDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    FOOTER
+*/
+
+.footer{
+    background-color: black;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+/*
+    MEDIA Q's
+*/
+
+
 
 @media only screen and (max-Width: 1600px) {
     .landingSection{

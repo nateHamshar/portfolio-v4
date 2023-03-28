@@ -4,7 +4,7 @@ const ProjectCard = ({ title, imageSource, projectDescription, codeURL, liveURL 
     return (
         <div className="projectCard">
             <div className="imageDiv">
-                <img src={imageSource} alt="" className="projectImage" />
+                <img src={imageSource} alt="" className="projectImage" loading="lazy"/>
             </div>
             <div className="textDiv">
                 <h1 className="projectTitle">{title}</h1>

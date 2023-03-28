@@ -1,6 +1,7 @@
 import "../styles/home.css";
 import codeImage from "../images/code.svg"
 import ProjectCard from "./ProjectCard";
+import ChallengeCard from "./ChallengeCard";
 const Home = () => {
     return (
         <div className="home">
@@ -17,7 +18,7 @@ const Home = () => {
                 <div className="aboutText">
                     <h1 className="aboutHeader">About Me</h1>
                     <p className="aboutParagraph firstParagraph">I am a passionate front-end developer with a drive to build <span className="emphasis">clean</span>, <span className="emphasis">modern</span>, and <span className="emphasis">user-friendly</span> websites and web apps that provide a great user experience. I have some full-stack experience, however, I am more specialized in the front-end of projects. I am most comfortable when building within the <span className="emphasis">MERN stack</span>, but I am always eager to learn something new. </p>
-                    <p className="aboutParagraph secondParagraph">As a self-taught developer, I have had to hold myself accountable for learning new technologies and best practices. Therefore, I have quite a bit of <span className="emphasis">problem solving</span> and <span className="emphasis">adaptive learning</span> experience with the help of reading documentation and asking questions on communities like Stack Overflow and Github. And now that I mentioned it, you should probably check out <a href="https://github.com/natehamshar" className="githubLink" target="_blank" rel="noreferrer">my GitHub!</a></p>
+                    <p className="aboutParagraph secondParagraph">Now let's talk about my technicals skills. I should preface by saying that I am proficient in HTML, CSS, and Javascript. For frameworks, I am most familiar with React, and I have some experience using Next. For data visualization, I have experience using D3 and Chart.js. Most of my builds also use some form of third-party libraries like Bootstrap, ReactStrap, Tailwind, SASS, etc. On the backend, I have experience connecting my projects to MongoDb and FireBase. And most of those connections use Express and Node.js. I use Git for version control, and most of the projects I've worked on are on my Github. And now that I mentioned it, you should probably check out <a href="https://github.com/natehamshar" className="githubLink" target="_blank" rel="noreferrer">my GitHub!</a></p>
                 </div>
                 <div className="techSkills">
                     <h1 className="techSkillsHeader">My Technical Skills</h1>
@@ -86,6 +87,35 @@ const Home = () => {
                              codeURL={"https://github.com/nateHamshar/business-tracker"}
                              liveURL={"https://natehamshar.github.io/business-tracker/"}
                     />
+            </section>
+
+            <section className="challengesSection">
+                <div className="challengesIntro">
+                    <h1 className="challengesHeader">Code Challenges</h1>
+                    <p className="challengesDescription">To keep my skills sharp, I started doing some popular coding challenges in my free time. I took this a step further and built out UIs for them and deployed them to Github Pages. The challenges are all pretty self explanatory, but if you want to see the code, they are all posted on my <a href="https://github.com/natehamshar" className="githubLink" target="_blank" rel="noreferrer">GitHub</a>.</p>
+                </div>
+                <div className="challengesDiv">
+                    <ChallengeCard 
+                        title={"Pokedex"}
+                        image={require('../images/pokedex-image.jpeg')}
+                        liveLink={"https://natehamshar.github.io/offbrand-pokedex/"}
+                        codeLink={"https://github.com/nateHamshar/offbrand-pokedex"}     />
+                    <ChallengeCard 
+                        title={"Enhanced Fizz-Buzz"}
+                        image={require('../images/fizz-buzz.jpeg')}
+                        liveLink={"https://natehamshar.github.io/fizz-buzz/"}
+                        codeLink={"https://github.com/nateHamshar/fizz-buzz"}     />
+                    <ChallengeCard 
+                        title={"Money Counting"}
+                        image={require('../images/money-counting.jpeg')}
+                        liveLink={"https://natehamshar.github.io/interactive-money-counting/"}
+                        codeLink={"https://github.com/nateHamshar/interactive-money-counting"}     />
+                    <ChallengeCard 
+                        title={"Reverse && Palindrome"}
+                        image={require('../images/string-challenge.jpeg')}
+                        liveLink={"https://natehamshar.github.io/string-challenge/"}
+                        codeLink={"https://github.com/nateHamshar/string-challenge"}     />
+                </div>
             </section>
 
             <footer className="footer">

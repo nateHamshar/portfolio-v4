@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --accent-color: #FF6F00;
+    --main-text: #2f2e41;
+    --project-text: #5a5a5a;
+    --main-font: 'Saira', sans-serif;
+    --emphasis: #FFFFFF;
+}
+
+
+.challengeCard{
+    width: 400px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.challengeImage{
+    height: 400px;
+    width: 400px;
+    border-radius: 1%;
+}
+
+.challengeInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challengeTitle{
+    color: white;
+    font-family: var(--main-font);
+    text-decoration: underline 3px var(--accent-color);
+}
+.challengeLinks{
+    display: flex;
+    color: white;
+    margin-top: .25rem;
+    font-family: var(--main-font);
+}
+.challengeCode, .challengeLive {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.challengeCode:hover, .challengeLive:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
