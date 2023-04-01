@@ -49,3 +49,13 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media only screen and (max-Width: 391px) {
+    .challengeCard{
+        width: 360px;
+    }
+    .challengeImage{
+        width: 375px;
+        height: 375px;
+    }
+}
