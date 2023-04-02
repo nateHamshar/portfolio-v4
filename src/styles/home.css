@@ -268,8 +268,7 @@ html{
 */
 .contactFormSection{
     background-color: var(--accent-color);
-
-    height: clamp(400px, 50vh, 800px);
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
 }
