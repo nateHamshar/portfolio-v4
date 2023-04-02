@@ -302,6 +302,11 @@ html{
     color: var(--main-text);
     margin-bottom: 1rem;
     padding-left: 1rem;
+    padding-top: .25rem;
+    min-height: 6rem;
+}
+.contactInput::placeholder, .contactMessageInput::placeholder{
+    color: darkblue;
 }
 .submitButton{
     width: 20%;

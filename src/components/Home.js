@@ -132,7 +132,7 @@ const Home = () => {
                 <form id="contactForm" action="https://formsubmit.co/williamhamshar@gmail.com" method="POST">
                     <input placeholder="Name or Company Name" type="text" name="name" required className="contactInput" />
                     <input placeholder="Email Address" type="email" name="email" required className="contactInput" />
-                    <input placeholder="Type your message here!" type="text" name="message" className="contactMessageInput" required />
+                    <textarea placeholder="Type your message here!" type="text" name="message" className="contactMessageInput" required />
                     <button type="submit" className="submitButton">Send</button>
                 </form>
             </section>
