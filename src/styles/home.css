@@ -80,6 +80,7 @@ html{
 }
 .dividerWord{
     color: white;
+    font-family: var(--main-font);
 }
 .socialIcon{
     font-size: 2rem;
@@ -264,7 +265,7 @@ html{
 */
 .contactFormSection{
     background-color: var(--accent-color);
-    
+
     height: clamp(400px, 50vh, 800px);
     display: flex;
     flex-direction: column;
