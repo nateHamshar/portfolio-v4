@@ -74,7 +74,15 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            <section className="contactFormSection">
+                <h1 className="contactFormHeader">Let's get in touch!</h1>
+                <form id="contactForm" action="https://formsubmit.co/williamhamshar@gmail.com" method="POST">
+                    <input placeholder="Name or Company Name" type="text" name="name" required className="contactInput" />
+                    <input placeholder="Email Address" type="email" name="email" required className="contactInput" />
+                    <textarea placeholder="Type your message here!" type="text" name="message" className="contactMessageInput" required />
+                    <button type="submit" className="submitButton">Send</button>
+                </form>
+            </section>
             <section className="projectsSection" id="projects">
                 
                 <h1 className="projectsHeader">My Projects</h1>
@@ -126,15 +134,6 @@ const Home = () => {
                         liveLink={"https://natehamshar.github.io/string-challenge/"}
                         codeLink={"https://github.com/nateHamshar/string-challenge"}     />
                 </div>
-            </section>
-            <section className="contactFormSection">
-                <h1 className="contactFormHeader">Let's get in touch!</h1>
-                <form id="contactForm" action="https://formsubmit.co/williamhamshar@gmail.com" method="POST">
-                    <input placeholder="Name or Company Name" type="text" name="name" required className="contactInput" />
-                    <input placeholder="Email Address" type="email" name="email" required className="contactInput" />
-                    <textarea placeholder="Type your message here!" type="text" name="message" className="contactMessageInput" required />
-                    <button type="submit" className="submitButton">Send</button>
-                </form>
             </section>
         </div>
     )

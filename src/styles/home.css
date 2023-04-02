@@ -264,6 +264,7 @@ html{
 */
 .contactFormSection{
     background-color: var(--accent-color);
+    
     height: clamp(400px, 50vh, 800px);
     display: flex;
     flex-direction: column;
@@ -290,7 +291,7 @@ html{
     border: 1px solid white;
     font-family: var(--main-font);
     font-size: 18px;
-    color: black;
+    color: var(--main-text);
     margin-bottom: 1rem;
     padding-left: 1rem;
 }
