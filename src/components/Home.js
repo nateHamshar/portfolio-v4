@@ -16,8 +16,11 @@ const Home = () => {
             <section className="socialsSection">
                 <div className="socialsIconsDiv">
                     <h1 className="findMeHeader">Find me on </h1>
-                    <a href="https://github.com/nateHamshar" target="_blank" rel="noreferrer" className="socialLink"><i className="devicon-github-original-wordmark socialIcon"></i></a>
-                    <a href="https://www.linkedin.com/in/william-hamshar/" target="_blank" rel="noreferrer" className="socialLink"><i className="devicon-linkedin-plain socialIcon"></i></a>
+                    
+                    <div className="icons">
+                        <a href="https://github.com/nateHamshar" target="_blank" rel="noreferrer" className="socialLink"><i className="devicon-github-original-wordmark socialIcon"></i></a>
+                        <a href="https://www.linkedin.com/in/william-hamshar/" target="_blank" rel="noreferrer" className="socialLink"><i className="devicon-linkedin-plain socialIcon"></i></a>
+                    </div>
                 </div>
                 <h1 className="dividerWord">- or -</h1>
                 <div className="contactCTA">

@@ -95,6 +95,9 @@ html{
     border-radius: 100vh;
     padding: .5rem;
 }
+.contactMeLink:hover{
+    color: var(--main-text);
+}
 
 
 
@@ -331,6 +334,22 @@ html{
 /*
     MEDIA Q's
 */
+
+@media only screen and (max-Width: 400px) {
+    .socialsIconsDiv{
+        flex-direction: column;
+    }
+    .dividerWord{
+        font-size: 14px;
+    }
+    .icons{
+        justify-content: space-evenly;
+        padding-top: .5rem;
+    }
+    .contactMeLink{
+        font-size: 14px;
+    }
+}
 
 @media only screen and (max-Width: 1300px) {
     .challengesDiv{
