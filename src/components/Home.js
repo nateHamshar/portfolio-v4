@@ -21,7 +21,7 @@ const Home = () => {
                 </div>
                 <h1 className="dividerWord">- or -</h1>
                 <div className="contactCTA">
-                    <a href="#contactForm" className="contactMeLink" rel="noreferrer">Send me a message!</a>
+                    <a href="#contactSection" className="contactMeLink" rel="noreferrer">Send me a message!</a>
                 </div>
             </section>
             <section className="aboutSection">
@@ -74,7 +74,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="contactFormSection">
+            <section className="contactFormSection" id="contactSection">
                 <h1 className="contactFormHeader">Let's get in touch!</h1>
                 <form id="contactForm" action="https://formsubmit.co/williamhamshar@gmail.com" method="POST">
                     <input placeholder="Name or Company Name" type="text" name="name" required className="contactInput" />
