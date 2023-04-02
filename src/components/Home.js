@@ -13,7 +13,17 @@ const Home = () => {
                     </div>
                     <img alt="" className="landingImage" src={codeImage} />
             </section>
-
+            <section className="socialsSection">
+                <div className="socialsIconsDiv">
+                    <h1 className="findMeHeader">Find me on </h1>
+                    <a href="https://github.com/nateHamshar" target="_blank" rel="noreferrer" className="socialLink"><i className="devicon-github-original-wordmark socialIcon"></i></a>
+                    <a href="https://www.linkedin.com/in/william-hamshar/" target="_blank" rel="noreferrer" className="socialLink"><i className="devicon-linkedin-plain socialIcon"></i></a>
+                </div>
+                <h1 className="dividerWord">- or -</h1>
+                <div className="contactCTA">
+                    <a href="#contactForm" className="contactMeLink" rel="noreferrer">Send me a message!</a>
+                </div>
+            </section>
             <section className="aboutSection">
                 <div className="aboutText">
                     <h1 className="aboutHeader">About Me</h1>
@@ -117,9 +127,15 @@ const Home = () => {
                         codeLink={"https://github.com/nateHamshar/string-challenge"}     />
                 </div>
             </section>
-
-            <footer className="footer">
-            </footer>
+            <section className="contactFormSection">
+                <h1 className="contactFormHeader">Let's get in touch!</h1>
+                <form id="contactForm" action="https://formsubmit.co/williamhamshar@gmail.com" method="POST">
+                    <input placeholder="Name or Company Name" type="text" name="name" required className="contactInput" />
+                    <input placeholder="Email Address" type="email" name="email" required className="contactInput" />
+                    <input placeholder="Type your message here!" type="text" name="message" className="contactMessageInput" required />
+                    <button type="submit" className="submitButton">Send</button>
+                </form>
+            </section>
         </div>
     )
 }
