@@ -127,10 +127,20 @@
 
 @media only screen and (max-Width: 500px) {
     .imageDiv, .projectImage{
-        width: 400px;
-        height: 200px;
+        width: 350px;
+        height: 175px;
     }
     .projectCard{
-        width: 400px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-Width: 500px) {
+    .imageDiv, .projectImage{
+        width: 350px;
+        height: 175px;
+    }
+    .projectCard{
+        width: 350px;
     }
 }
